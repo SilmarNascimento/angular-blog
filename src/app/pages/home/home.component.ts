@@ -1,10 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { fakeData } from 'src/app/data/fakeData';
+import { ArticleSchema } from 'src/app/schemas/article.schema';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
+  mainArticles: ArticleSchema[] = [];
+  sideArticles: ArticleSchema[] = [];
 
+  constructor() {}
+
+  ngOnInit(): void {
+    this.mainArticles = fakeData.mainCard;
+    this.sideArticles = fakeData.sideCard;
+  }
 }

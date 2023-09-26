@@ -6,9 +6,19 @@
 </section>
 <section class="container__articles">
   <main class="main__article">
-    <app-main-card
-      id=""
-    ></app-main-card>
+    <ul>
+      <li *ngFor="let article of mainArticles">
+        <app-main-card
+          id="{{article.id}}"
+          title="{{article.title}}"
+          hash="{{article.hash}}"
+          date="{{article.date}}"
+          image="{{article.image}}"
+          description="{{article.description}}"
+          comments="{{article.comments}}"
+        ></app-main-card>
+      </li>
+    </ul>
   </main>
   <aside class="side__article">
     <app-side-card></app-side-card>

@@ -12,15 +12,13 @@ export class MainCardComponent {
   @Input()
   title: string = '';
   @Input()
-  date: string = '';
+  hash: string = '';
   @Input()
-  description: string = '';
+  date: string = '';
   @Input()
   image: string = '';
   @Input()
-  contentText: string = '';
-  @Input()
-  hash: string = '';
+  description: string = '';
   @Input()
   comments: CommentSchema[] = [];
 }
