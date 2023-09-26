@@ -9,10 +9,18 @@ import { CommentSchema } from 'src/app/schemas/comment.schema';
 export class MainCardComponent {
   @Input()
   id: string = '';
+  @Input()
+  title: string = '';
+  @Input()
   date: string = '';
+  @Input()
   description: string = '';
+  @Input()
   image: string = '';
+  @Input()
   contentText: string = '';
+  @Input()
   hash: string = '';
+  @Input()
   comments: CommentSchema[] = [];
 }
