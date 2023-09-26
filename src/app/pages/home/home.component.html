@@ -9,13 +9,13 @@
     <ul>
       <li *ngFor="let article of mainArticles">
         <app-main-card
-          id="{{article.id}}"
-          title="{{article.title}}"
-          hash="{{article.hash}}"
-          date="{{article.date}}"
-          image="{{article.image}}"
-          description="{{article.description}}"
-          comments="{{article.comments}}"
+          [id]="article.id"
+          [title]="article.title"
+          [hash]="article.hash"
+          [date]="article.date"
+          [image]="article.image"
+          [description]="article.description"
+          [comments]="article.comments"
         ></app-main-card>
       </li>
     </ul>

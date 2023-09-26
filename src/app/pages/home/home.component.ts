@@ -15,6 +15,8 @@ export class HomeComponent implements OnInit{
 
   ngOnInit(): void {
     this.mainArticles = fakeData.mainCard;
+    console.log(this.mainArticles[0].comments);
+
     this.sideArticles = fakeData.sideCard;
   }
 }
