@@ -1,0 +1,34 @@
+.conteiner__menu-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteiner__menu-bar > .container__contact {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__contact > div {
+  margin-left: 2.5%;
+}
+
+.container__social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 75px;
+  padding: 0 2.5%;
+}
+
+.container__social-media > li {
+  list-style-type: none;
+}
+
+.container__title {
+}

@@ -3,7 +3,7 @@
     <div>
       <a href="mailto:silmarfnascimento@gmail.com">silmarfnascimento@gmail.com</a>
     </div>
-    <ul>
+    <ul class="container__social-media">
       <li *ngFor="let media of contacts; let i = index">
         <app-social-media-contact
           [media]="media.split(' - ')[0]"
@@ -13,7 +13,7 @@
       </li>
     </ul>
   </div>
-  <div>
+  <div class="container__title">
     <h1>title</h1>
   </div>
 </div>
