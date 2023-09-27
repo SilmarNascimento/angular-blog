@@ -11,7 +11,14 @@ import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CommentSectionComponent } from './components/comment-section/comment-section.component';
 import { SocialMediaContactComponent } from './components/social-media-contact/social-media-contact.component';
-import { LucideAngularModule, Home, Menu, UserCheck, Github, Linkedin } from 'lucide-angular';
+import {
+  LucideAngularModule,
+  Home,
+  Menu,
+  UserCheck,
+  Github,
+  Linkedin
+} from 'lucide-angular';
 
 @NgModule({
   declarations: [
