@@ -10,6 +10,8 @@ import { MainCardComponent } from './components/main-card/main-card.component';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CommentSectionComponent } from './components/comment-section/comment-section.component';
+import { SocialMediaContactComponent } from './components/social-media-contact/social-media-contact.component';
+import { LucideAngularModule, File, Home, Menu, UserCheck, TwitterIcon } from 'lucide-angular';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { CommentSectionComponent } from './components/comment-section/comment-se
     MainCardComponent,
     MenuBarComponent,
     CarouselComponent,
-    CommentSectionComponent
+    CommentSectionComponent,
+    SocialMediaContactComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LucideAngularModule.pick({File, Home, Menu, UserCheck, TwitterIcon})
   ],
   providers: [],
   bootstrap: [AppComponent]
