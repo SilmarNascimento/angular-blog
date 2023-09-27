@@ -13,9 +13,8 @@ import { CommentSectionComponent } from './components/comment-section/comment-se
 import { SocialMediaContactComponent } from './components/social-media-contact/social-media-contact.component';
 import {
   LucideAngularModule,
-  Home,
-  Menu,
-  UserCheck,
+  MessageCircle,
+  Heart,
   Github,
   Linkedin
 } from 'lucide-angular';
@@ -35,7 +34,7 @@ import {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LucideAngularModule.pick({ Home, Menu, UserCheck, Github, Linkedin})
+    LucideAngularModule.pick({ Heart, MessageCircle, Github, Linkedin})
   ],
   providers: [],
   bootstrap: [AppComponent]

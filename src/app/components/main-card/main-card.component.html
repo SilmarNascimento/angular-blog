@@ -1,8 +1,10 @@
 <div class="container__main-card">
   <header>
-    <button>s2</button>
-    <span class="container__author">{{author}}</span>
+    <button>
+      <lucide-icon name="Heart" class="my-icon"></lucide-icon>
+    </button>
     <h1 class="container__title">{{title}}</h1>
+    <span class="container__author">by {{author}}</span>
     <p>{{hash}}</p>
   </header>
   <div class="container__image">
@@ -11,6 +13,8 @@
   <div class="container__text">
     <p>{{description}}</p>
   </div>
+  <div class="container__comment">
+    <lucide-icon name="MessageCircle" class="my-icon"></lucide-icon>
+  </div>
   <button>read more</button>
-  <span>()comments</span>
 </div>

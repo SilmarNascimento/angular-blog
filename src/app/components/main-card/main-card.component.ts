@@ -19,7 +19,7 @@ export class MainCardComponent implements OnInit{
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.comments);
-
+    const hashTags = this.hash.map((string) => `#${string} `).join('');
+    this.hash = [hashTags];
   }
 }

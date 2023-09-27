@@ -14,7 +14,5 @@ export class SocialMediaContactComponent implements OnInit{
   ngOnInit(): void {
     console.log(this.link);
     console.log(this.media);
-
-
   }
 }
