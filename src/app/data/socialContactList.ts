@@ -1,4 +1,4 @@
 export const contactList = [
-  'https://github.com/SilmarNascimento',
-  'https://www.linkedin.com/in/silmarnascimento/',
+  'Github - https://github.com/SilmarNascimento',
+  'Linkedin - https://www.linkedin.com/in/silmarnascimento/',
 ];

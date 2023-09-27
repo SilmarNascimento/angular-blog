@@ -4,9 +4,10 @@
       email
     </div>
     <ul>
-      <li>
+      <li *ngFor="let media of contacts; let i = index">
         <app-social-media-contact
-
+          [media]="media.split(' - ')[0]"
+          [link]="media.split(' - ')[1]"
         >
         </app-social-media-contact>
       </li>
