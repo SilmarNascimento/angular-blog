@@ -1,0 +1,87 @@
+.container__main-card {
+  border: 1px solid gray;
+  max-width: 825px;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__header {
+  border: 1px solid gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.container__header > button {
+  border: none;
+  background-color: #ffffff;
+  align-self: flex-end;
+  padding-top: 20px;
+  padding-right: 5%;
+}
+
+.container__header > h1 {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+
+.container__header > .container__author {
+  margin: 0;
+  margin-bottom: 0.75rem;
+  font-style: italic;
+  color: gray;
+}
+
+.container__header > p {
+  margin: 0;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.container__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__image > img {
+  flex: 1 1 auto;
+  max-width: 90%;
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.container__text {
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__text > p {
+  flex: 1 1 auto;
+  max-width: 90%;
+  width: 90%;
+  text-align: justify;
+  color: #222;
+}
+
+.container__comment {
+  align-self: flex-end;
+  padding-right: 5%;
+}
+
+.container__main-card > button {
+  border: none;
+  background-color: gray;
+  padding: 10px 50px;
+  border-radius: 5%;
+  margin-bottom: 25px;
+}
