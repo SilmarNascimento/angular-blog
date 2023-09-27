@@ -21,6 +21,16 @@
     </ul>
   </main>
   <aside class="side__article">
-    <app-side-card></app-side-card>
+    <ul>
+      <li *ngFor="let article of sideArticles">
+        <app-side-card
+        [id]="article.id"
+        [title]="article.title"
+        [hash]="article.hash"
+        [date]="article.date"
+        [image]="article.image"
+        ></app-side-card>
+      </li>
+    </ul>
   </aside>
 </section>
