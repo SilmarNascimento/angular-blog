@@ -19,6 +19,8 @@ export class SideCardComponent implements OnInit {
   ngOnInit(): void {
     const hashTags = this.hash.map((string) => `#${string} `).join('');
     this.hash = [hashTags];
+    console.log(this.image255);
+
   }
 
 }
