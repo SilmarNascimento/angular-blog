@@ -69,6 +69,8 @@
   width: 90%;
   text-align: justify;
   color: #222;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.75em;
 }
 
 .container__comment {
