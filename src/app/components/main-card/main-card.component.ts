@@ -8,11 +8,12 @@ import { CommentSchema } from 'src/app/schemas/comment.schema';
 })
 export class MainCardComponent implements OnInit{
   @Input()  id: number = 1;
+  @Input()  author: string = '';
   @Input()  title: string = '';
-  @Input()  hash: string[] = [];
-  @Input()  date: string = '';
-  @Input()  image: string = '';
   @Input()  description: string = '';
+  @Input()  image825: string = '';
+  @Input()  image1800: string = '';
+  @Input()  hash: string[] = [];
   @Input()  comments: CommentSchema[] = [];
 
   constructor() {}
