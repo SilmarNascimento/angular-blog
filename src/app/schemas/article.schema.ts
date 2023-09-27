@@ -2,10 +2,12 @@ import { CommentSchema } from "./comment.schema";
 
 export interface ArticleSchema {
   id: number,
-  date: string,
+  author: string,
   title: string,
   description: string,
-  image: string,
+  image255: string,
+  image825: string,
+  image1800: string,
   contentText: string,
   hash: string[],
   comments: CommentSchema[]
