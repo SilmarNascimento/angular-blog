@@ -1,7 +1,14 @@
 <div class="container__side-card">
   <div class="container__image">
-    <img src={{image255}} alt="side-card image">
+    <img
+      [routerLink]="['content','sideCard', id]"
+      src={{image255}}
+      alt="side-card image"
+    >
   </div>
-  <h1 class="container__title">{{title}}</h1>
+  <h1
+    class="container__title"
+    [routerLink]="['content','sideCard', id]"
+  >{{title}}</h1>
   <span class="container__author">by {{author}}</span>
 </div>

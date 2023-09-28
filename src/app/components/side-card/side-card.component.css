@@ -12,6 +12,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .container__image > img {
@@ -26,6 +27,7 @@
   margin-top: 0.75rem;
   font-family: sans-serif;
   text-align: center;
+  cursor: pointer;
 }
 
 .container__side-card > .container__author {
