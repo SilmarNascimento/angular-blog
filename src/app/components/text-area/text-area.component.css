@@ -1,0 +1,31 @@
+.container__text-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 825px;
+}
+
+.container__text-area > label {
+  align-self: flex-start;
+  margin: 0;
+  margin-bottom: 0.25rem;
+  font-style: italic;
+  color: gray;
+}
+
+.container__text-area > textarea {
+  width: 100%;
+  min-height: 50px;
+  resize: none;
+}
+
+.container__text-area > button {
+  border: none;
+  background-color: gray;
+  padding: 10px 50px;
+  border-radius: 5%;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
