@@ -11,9 +11,11 @@
     <p>{{description}}</p>
   </div>
   <div class="container__social">
-    <div class="container__comment" (click)="handleComments()">
-      <span>{{comments.length}} comments</span>
-      <lucide-icon name="MessageCircle" class="my-icon"></lucide-icon>
+    <div class="container__comment">
+      <a [routerLink]="['content','mainCard', id]">
+        <span>{{comments.length}} comments</span>
+        <lucide-icon name="MessageCircle" class="my-icon"></lucide-icon>
+      </a>
     </div>
     <div class="container__favorit" (click)="toggleFavorite()">
       <lucide-icon name="Heart" class="my-icon"></lucide-icon>

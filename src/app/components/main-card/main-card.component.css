@@ -83,7 +83,16 @@
   align-items: center;
 }
 
-.container__comment > span {
+.container__comment > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.container__comment > a > span {
   font-family: "Roboto", sans-serif;
   align-self: center;
   margin-right: 0.75rem;

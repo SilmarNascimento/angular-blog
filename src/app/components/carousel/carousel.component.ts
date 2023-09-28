@@ -19,8 +19,6 @@ export class CarouselComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.initiateTimer();
     this.images = imagesArray
-    console.log(this.images);
-
   }
 
   ngOnDestroy(): void {

@@ -30,7 +30,5 @@ export class MainCardComponent implements OnInit{
 
   toggleFavorite() {
     this.isFavorite ? this.isFavorite = false : this.isFavorite = true;
-    console.log(this.isFavorite);
-
   }
 }
