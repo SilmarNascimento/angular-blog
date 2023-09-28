@@ -11,11 +11,11 @@
     <p>{{description}}</p>
   </div>
   <div class="container__social">
-    <div class="container__comment">
+    <div class="container__comment" (click)="handleComments()">
       <span>{{comments.length}} comments</span>
       <lucide-icon name="MessageCircle" class="my-icon"></lucide-icon>
     </div>
-    <div class="container__favorit">
+    <div class="container__favorit" (click)="toggleFavorite()">
       <lucide-icon name="Heart" class="my-icon"></lucide-icon>
     </div>
   </div>

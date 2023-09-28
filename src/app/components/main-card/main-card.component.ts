@@ -15,11 +15,22 @@ export class MainCardComponent implements OnInit{
   @Input()  image1800: string = '';
   @Input()  hash: string[] = [];
   @Input()  comments: CommentSchema[] = [];
+  isFavorite: boolean = false;
 
   constructor() {}
 
   ngOnInit(): void {
     const hashTags = this.hash.map((string) => `#${string} `).join('');
     this.hash = [hashTags];
+  }
+
+  handleComments() {
+    console.log('cliquei botao')
+  }
+
+  toggleFavorite() {
+    this.isFavorite ? this.isFavorite = false : this.isFavorite = true;
+    console.log(this.isFavorite);
+
   }
 }
