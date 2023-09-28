@@ -1,3 +1,5 @@
+import { ArticleSchema } from "../schemas/article.schema";
+
 const author1 = 'Lucas Tose';
 const author2 = 'Abner Schubert';
 const author3 = 'Igor Santos';
@@ -10,8 +12,12 @@ const contentText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
 Etiam et ipsum a eros vestibulum pretium. Integer euismod leo et nisl venenatis dapibus. Nulla sapien nisi, dignissim eu facilisis in, mattis sed mauris. Sed tincidunt nisl nec ipsum varius, accumsan elementum turpis convallis. Sed rutrum ullamcorper augue, vel consequat turpis consectetur tincidunt. In ac felis sit amet enim varius malesuada. Quisque ligula ligula, tincidunt sed mauris sit amet, semper ultrices ligula.
 Cras pretium odio ac sapien tempor, non suscipit libero pretium. Quisque eget egestas ligula, sit amet tempor nisl. Maecenas justo elit, facilisis a convallis quis, condimentum in sem. Proin sed ullamcorper nibh. Sed dignissim nisi sit amet faucibus bibendum. In bibendum sem nunc, eu consequat risus pellentesque ut. Donec ligula turpis, lacinia sit amet dolor non, ultricies euismod nunc.`;
 
+interface Data {
+  mainCard: ArticleSchema[];
+  sideCard: ArticleSchema[];
+}
 
-export const fakeData = {
+export const fakeData: Data = {
   mainCard: [
     {
       id: 1,
