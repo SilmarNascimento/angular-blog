@@ -11,7 +11,10 @@ import { ArticleSchema } from 'src/app/schemas/article.schema';
 export class ContentComponent implements OnInit {
   type: 'mainCard' | 'sideCard' | null  = null;
   id: number = 0;
-  article: ArticleSchema | {} = {};
+  article: ArticleSchema | null = null;
+  hash: string[] = [];
+  contentText: string[] | null = null;
+  comments: string[][] | null = null;
   constructor(
     private route: ActivatedRoute
   ) { }
@@ -23,9 +26,27 @@ export class ContentComponent implements OnInit {
       if(id && (type === 'mainCard' || type === 'sideCard')) {
         this.type = type;
         this.id = parseInt(id, 0);
-        this.article = fakeData[this.type]
-          .find((article: ArticleSchema) => article.id === this.id) ?? {}
+        this.article = (fakeData[this.type] || [])
+          .find((article: ArticleSchema) => article.id === this.id) || null;
+
+        this.getHashTag();
+        this.getContentText();
+
+
+        //this.comments = this.article?.comments;
       }
     });
+  }
+
+  getHashTag() {
+    const hashTags = (this.article?.hash ?? [])
+          .map((string) => `#${string} `).join('');
+    this.hash = [hashTags];
+  }
+  getContentText() {
+    this.contentText = (this.article?.contentText ?? '').split("\n");
+  }
+  getComments() {
+
   }
 }
