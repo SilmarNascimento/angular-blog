@@ -20,6 +20,7 @@
 <section class="container__comments">
   <app-comment-section
     *ngFor="let comment of comments"
-    [comment]="comment"
+    [comment]="comment.content"
+    [author]="comment.author"
   ></app-comment-section>
 </section>

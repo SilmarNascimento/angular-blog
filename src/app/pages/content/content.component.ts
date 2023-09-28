@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { fakeData } from 'src/app/data/fakeData';
 import { ArticleSchema } from 'src/app/schemas/article.schema';
+import { CommentSchema } from 'src/app/schemas/comment.schema';
 
 @Component({
   selector: 'app-content',
@@ -14,7 +15,7 @@ export class ContentComponent implements OnInit {
   article: ArticleSchema | null = null;
   hash: string[] = [];
   contentText: string[] | null = null;
-  comments: string[][] | null = null;
+  comments: CommentSchema[] | null = null;
   constructor(
     private route: ActivatedRoute
   ) { }
@@ -31,9 +32,11 @@ export class ContentComponent implements OnInit {
 
         this.getHashTag();
         this.getContentText();
+        this.comments = this.article?.comments || null;
+        console.log(this.article);
 
+        console.log(this.comments);
 
-        //this.comments = this.article?.comments;
       }
     });
   }
@@ -43,10 +46,8 @@ export class ContentComponent implements OnInit {
           .map((string) => `#${string} `).join('');
     this.hash = [hashTags];
   }
+
   getContentText() {
     this.contentText = (this.article?.contentText ?? '').split("\n");
-  }
-  getComments() {
-
   }
 }
