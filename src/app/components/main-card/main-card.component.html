@@ -1,8 +1,5 @@
 <div class="container__main-card">
   <header class="container__header">
-    <button>
-      <lucide-icon name="Heart" class="my-icon"></lucide-icon>
-    </button>
     <h1 class="container__title">{{title}}</h1>
     <span class="container__author">by {{author}}</span>
     <p>{{hash}}</p>
@@ -13,8 +10,14 @@
   <div class="container__text">
     <p>{{description}}</p>
   </div>
-  <div class="container__comment">
-    <lucide-icon name="MessageCircle" class="my-icon"></lucide-icon>
+  <div class="container__social">
+    <div class="container__comment">
+      <span>{{comments.length}} comments</span>
+      <lucide-icon name="MessageCircle" class="my-icon"></lucide-icon>
+    </div>
+    <div class="container__favorit">
+      <lucide-icon name="Heart" class="my-icon"></lucide-icon>
+    </div>
   </div>
   <button>read more</button>
 </div>
