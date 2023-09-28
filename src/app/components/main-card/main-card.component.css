@@ -20,6 +20,7 @@
   margin-bottom: 0.5rem;
   text-transform: capitalize;
   font-family: sans-serif;
+  cursor: pointer;
 }
 
 .container__header > .container__author {
@@ -108,4 +109,5 @@
   padding: 10px 50px;
   border-radius: 5%;
   margin-bottom: 2rem;
+  cursor: pointer;
 }

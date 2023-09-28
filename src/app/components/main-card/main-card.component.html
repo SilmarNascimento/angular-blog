@@ -1,6 +1,11 @@
 <div class="container__main-card">
   <header class="container__header">
-    <h1 class="container__title">{{title}}</h1>
+    <h1
+      class="container__title"
+      [routerLink]="['content','mainCard', id]"
+    >
+      {{title}}
+    </h1>
     <span class="container__author">by {{author}}</span>
     <p>{{hash}}</p>
   </header>
@@ -21,5 +26,5 @@
       <lucide-icon name="Heart" class="my-icon"></lucide-icon>
     </div>
   </div>
-  <button>read more</button>
+  <button [routerLink]="['content','mainCard', id]">READ MORE</button>
 </div>
