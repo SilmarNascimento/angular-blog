@@ -24,11 +24,9 @@ export class MainCardComponent implements OnInit{
     this.hash = [hashTags];
   }
 
-  handleComments() {
-    console.log('cliquei botao')
-  }
-
   toggleFavorite() {
     this.isFavorite ? this.isFavorite = false : this.isFavorite = true;
+    const svgHeart = document.getElementsByClassName('lucide-Heart')[this.id -1];
+    this.isFavorite ? svgHeart.setAttribute('fill','red') : svgHeart.setAttribute('fill','none');
   }
 }
