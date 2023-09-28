@@ -19,6 +19,20 @@ app-side-card {
   align-items: center;
 }
 
+.side__article > ul > li {
+  margin-left: 5rem;
+}
+
+hr {
+  color: gray;
+  margin-bottom: 2em;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style-type: none;
 }

@@ -1,0 +1,27 @@
+.photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 620px;
+  transition: all 0.5s ease-in-out;
+}
+
+.control-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.control-btn button {
+  background: #ccc;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+}
+
+.control-btn button.active {
+  background: #aa0000;
+  cursor: default;
+}
