@@ -7,6 +7,9 @@
 
 .container__comment-section > h2 {
   align-self: flex-start;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
 }
 
 .container__comment-section > p {
@@ -14,4 +17,5 @@
   font-family: "Roboto", sans-serif;
   line-height: 1.75em;
   text-align: justify;
+  margin: 0.5rem 0 1.5rem 0;
 }
