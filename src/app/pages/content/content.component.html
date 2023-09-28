@@ -1,26 +1,29 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
-<main>
-  <section>
-    <h1>{{article?.title}}</h1>
-    <span>by {{article?.author}}</span>
-    <span>{{hash}}</span>
-    <div class="conteiner__image">
+<div class="container__content">
+  <div>
+    <app-menu-bar></app-menu-bar>
+  </div>
+  <main>
+    <header class="container__header">
+      <h1 class="container__title">{{article?.title}}</h1>
+      <span class="container__author">by {{article?.author}}</span>
+      <p>{{hash}}</p>
+    </header>
+    <div class="container__image">
       <img src="{{article?.image825}}" alt="">
     </div>
-  </section>
-  <a [routerLink]="['']"><< voltar</a>
-  <section class="container__comments">
-    <p
-    *ngFor="let paragraph of contentText"
-    >{{paragraph}}</p>
-  </section>
-</main>
-<section class="container__comments">
-  <app-comment-section
-    *ngFor="let comment of comments"
-    [comment]="comment.content"
-    [author]="comment.author"
-  ></app-comment-section>
-</section>
+    <section class="container__text">
+      <p
+      *ngFor="let paragraph of contentText"
+      >{{paragraph}}</p>
+    </section>
+    <a [routerLink]="['']"><< voltar</a>
+    <h2>Comments</h2>
+    <section class="container__comments">
+      <app-comment-section
+      *ngFor="let comment of comments"
+      [comment]="comment.content"
+      [author]="comment.author"
+      ></app-comment-section>
+    </section>
+  </main>
+</div>

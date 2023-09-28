@@ -1,0 +1,17 @@
+.container__comment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__comment-section > h2 {
+  align-self: flex-start;
+}
+
+.container__comment-section > p {
+  max-width: 825px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.75em;
+  text-align: justify;
+}
