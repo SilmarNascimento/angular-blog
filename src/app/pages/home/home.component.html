@@ -1,38 +1,42 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
-<section class="carousel">
-  <app-carousel></app-carousel>
-</section>
-<section class="container__articles">
-  <main class="main__article">
-    <ul>
-      <li *ngFor="let article of mainArticles">
-        <app-main-card
+<div class="container__home">
+  <header>
+    <app-menu-bar></app-menu-bar>
+  </header>
+  <section class="carousel">
+    <app-carousel></app-carousel>
+  </section>
+  <section class="container__articles">
+    <main class="main__article">
+      <ul>
+        <li *ngFor="let article of mainArticles">
+          <app-main-card
+            [id]="article.id"
+            [title]="article.title"
+            [hash]="article.hash"
+            [author]="article.author"
+            [image825]="article.image825"
+            [image1800]="article.image1800"
+            [description]="article.description"
+            [comments]="article.comments"
+          ></app-main-card>
+          <hr>
+        </li>
+      </ul>
+    </main>
+    <aside class="side__article">
+      <ul>
+        <li *ngFor="let article of sideArticles">
+          <app-side-card
           [id]="article.id"
           [title]="article.title"
           [hash]="article.hash"
           [author]="article.author"
+          [image255]="article.image255"
           [image825]="article.image825"
-          [image1800]="article.image1800"
-          [description]="article.description"
-          [comments]="article.comments"
-        ></app-main-card>
-      </li>
-    </ul>
-  </main>
-  <aside class="side__article">
-    <ul>
-      <li *ngFor="let article of sideArticles">
-        <app-side-card
-        [id]="article.id"
-        [title]="article.title"
-        [hash]="article.hash"
-        [author]="article.author"
-        [image255]="article.image255"
-        [image825]="article.image825"
-        ></app-side-card>
-      </li>
-    </ul>
-  </aside>
-</section>
+          ></app-side-card>
+          <hr>
+        </li>
+      </ul>
+    </aside>
+  </section>
+</div>
