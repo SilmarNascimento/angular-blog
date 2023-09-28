@@ -14,10 +14,12 @@ import { SocialMediaContactComponent } from './components/social-media-contact/s
 import {
   LucideAngularModule,
   MessageCircle,
+  Undo2,
   Heart,
   Github,
   Linkedin
 } from 'lucide-angular';
+import { TextAreaComponent } from './components/text-area/text-area.component';
 
 @NgModule({
   declarations: [
@@ -29,12 +31,13 @@ import {
     MenuBarComponent,
     CarouselComponent,
     CommentSectionComponent,
-    SocialMediaContactComponent
+    SocialMediaContactComponent,
+    TextAreaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LucideAngularModule.pick({ Heart, MessageCircle, Github, Linkedin})
+    LucideAngularModule.pick({ Heart,Undo2, MessageCircle, Github, Linkedin})
   ],
   providers: [],
   bootstrap: [AppComponent]

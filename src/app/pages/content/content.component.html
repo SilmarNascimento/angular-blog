@@ -16,7 +16,7 @@
       *ngFor="let paragraph of contentText"
       >{{paragraph}}</p>
     </section>
-    <a [routerLink]="['']"><< voltar</a>
+    <a [routerLink]="['']"><lucide-icon name="Undo2" class="my-icon"></lucide-icon></a>
     <h2>Comments</h2>
     <section class="container__comments">
       <app-comment-section
@@ -24,6 +24,9 @@
       [comment]="comment.content"
       [author]="comment.author"
       ></app-comment-section>
+    </section>
+    <section>
+      <app-text-area></app-text-area>
     </section>
   </main>
 </div>

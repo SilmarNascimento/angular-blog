@@ -76,6 +76,7 @@ main {
 
 main > a {
   padding: 2rem 0;
+  color: inherit;
 }
 
 main > h2 {

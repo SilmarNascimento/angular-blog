@@ -17,6 +17,11 @@
   margin-left: 2.5%;
 }
 
+.container__contact > div > a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .container__social-media {
   margin-top: 0.75rem;
   display: flex;
