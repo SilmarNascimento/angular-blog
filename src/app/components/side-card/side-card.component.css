@@ -13,13 +13,21 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  max-width: 90%;
+  width: 90%;
+  overflow: hidden;
+  border-radius: 0.75rem;
 }
 
 .container__image > img {
   flex: 1 1 auto;
-  max-width: 90%;
-  width: 90%;
   border-radius: 0.75rem;
+
+  transition: transform 0.6s;
+}
+
+.container__image > img:hover {
+  transform: scale(1.1);
 }
 
 .container__side-card > .container__title {
